@@ -1,0 +1,34 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package POO.Banco;
+
+import POO.Banco.PaqueteDeAcciones;
+import java.util.ArrayList;
+
+/**
+ *
+ * @author guill
+ */
+public class ClientePremium extends Cliente {
+    private AgenteDeInversiones agente;
+
+    public ClientePremium(AgenteDeInversiones agente, int saldo, ArrayList<PaqueteDeAcciones> CarteraAcciones, String nombre, String DNI, boolean tipo) {
+        super(saldo, CarteraAcciones, nombre, DNI, tipo);
+        this.agente = agente;
+    }
+
+    
+
+    public AgenteDeInversiones getAgente() {
+        return agente;
+    }
+
+    public void setAgente(AgenteDeInversiones agente) {
+        this.agente = agente;
+    }
+    
+
+}
